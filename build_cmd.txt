@@ -1,3 +1,5 @@
+x86_64-w64-mingw32-gcc -I"$JAVA_HOME\include" -I"$JAVA_HOME\include\win32" -shared -o hello.dll HelloJNI.cpp
+
 x86_64-w64-mingw32-gcc -c -I"$JAVA_HOME\include" -I"$JAVA_HOME\include\win32" HelloJNI.cpp
 
 x86_64-w64-mingw32-gcc -shared -o hello.dll HelloJNI.o
